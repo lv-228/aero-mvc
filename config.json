@@ -1,0 +1,51 @@
+{
+	"db": 
+	{
+		"host": "10.159.12.23:3306",
+		"user": "script",
+		"password": "pedagog321!",
+		"type": "mysql",
+		"database": "avia"
+	},
+	"resol":
+	{
+		"3": 
+		{
+			"testcontroller": "test",
+			"user_controller": ["un_auth", "profile", "change_role", "registration"],
+			"ticket": ["main", "prepare_order", "buy", "ticket_reg", "invoice"],
+			"model_create": "get_table",
+			"page_controller": ["admin_panel", "users_registration_tables", "flight_table", "flight_transfers", "flight_reg"]
+		},
+		"2": 
+		{
+			"testcontroller": "test",
+			"user_controller": ["un_auth", "profile"],
+			"ticket": ["main", "prepare_order", "buy", "ticket_reg", "invoice"],
+			"page_controller": ["flight_reg", "users_registration_tables", "flight_table", "flight_transfers"]
+		},
+		"1": 
+		{
+			"testcontroller": "test",
+			"user_controller": ["un_auth", "profile"],
+			"ticket": ["main", "prepare_order", "buy", "ticket_reg", "invoice"],
+			"page_controller": ["flight_reg", "flight_table", "flight_transfers"]
+		},
+		"0":
+		{
+			"user_controller": ["auth", "un_auth", "registration"],
+			"ticket": ["main", "fill_db"],
+			"model_create": "get_table",
+			"api_controller": "get_flights"
+		}
+	},
+	"main":
+	{
+		"ticket": "main"
+	},
+	"cookie_fields":{
+		"login":"",
+		"role":""
+	},
+	"salt_type": "$6$rounds=5000$"
+}
